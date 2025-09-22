@@ -169,7 +169,9 @@ The output file named **output.txt** were the results captured, on executing wit
 
 ## Observations from running the project on 3 data nodes and a single data node:
 
-As per the instructions of the assignment, experiment with 3 data nodes and a single data node were carried out. So, the execution with 3 data nodes completed faster compared to 1 data node, as tasks were divided amongst all the 3 nodes hence lowering the overall time for execution. However, with 1 data node, all calculations and storage were taken care by a single node.
+As per the instructions of the assignment, experiment with 3 data nodes and a single data node were carried out. So, the execution with 3 data nodes completed faster compared to 1 data node, as tasks were divided amongst all the 3 nodes hence lowering the overall time for execution. However, with 1 data node, all calculations and storage were taken care by a single node. 
+
+However, for this project specifically, **a very minimal time difference was observed in between 2 experiments (one using 3 data nodes and the other one using 1 data node).** It also depends on the input size you are passing, the more the size of the input, the difference observed will be more prominent. In any which way, **the experiment with 3 data nodes proves to be more efficient for performing the task compared to the one with single data node.**
 
 The first project run was executed with 3 data nodes and then with single data node, hence the **docker-compose.yml** consists of latest data i.e., **single data node configuration.**
 
