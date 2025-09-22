@@ -112,8 +112,19 @@ To copy the output from HDFS to your local machine:
    ```
     ```bash
     docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output1/ shared-folder/output/
-    docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output1/ shared-folder/output2/
     ```
+
+## Execution with a single data node
+
+Since we also, have to run this project using single data node, the steps for execution remains the same as stated above from **steps 1 to 10 (sub-point 1).**
+
+However, with regards to **step 10 and sub-point 2, there will be a slight change** in the output folder's name as **output.txt is already generated** from the execution with 3 data nodes, so for a new output folder to store your results, use the below Docker command to copy from container to local machine
+```bash
+exit 
+```
+```bash
+docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output1/ shared-folder/output2/
+```
 
 ## Challenges and Solutions
 
@@ -161,3 +172,5 @@ The output file named **output.txt** were the results captured, on executing wit
 As per the instructions of the assignment, experiment with 3 data nodes and a single data node were carried out. So, the execution with 3 data nodes completed faster compared to 1 data node, as tasks were divided amongst all the 3 nodes hence lowering the overall time for execution. However, with 1 data node, all calculations and storage were taken care by a single node.
 
 The first project run was executed with 3 data nodes and then with single data node, hence the **docker-compose.yml** consists of latest data i.e., **single data node configuration.**
+
+---
