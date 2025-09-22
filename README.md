@@ -112,13 +112,14 @@ To copy the output from HDFS to your local machine:
    ```
     ```bash
     docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output1/ shared-folder/output/
+    docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output1/ shared-folder/output2/
     ```
 
 ## Challenges and Solutions
 
 **Problem:** After adding the necessary logic for DocumentSimilarityDriver class, DocumentSimilarityMapper class and DocumentSimilarityReducer class, I executed the code but I received a **ClassNotFoundException** while I was implementing step 8 of the code run.
 
-**Solutions** Earlier, I executed the code with my Driver class located in the path **"/workspaces/CloudComputing_Assignment2/src/main/com/example/controller/DocumentSimilarityDriver.java"**, but Maven expects JAVA source files to be under **"src/main/java"**. Hence, I corrected my path to **"/workspaces/CloudComputing_Assignment2/src/main/java/com/example/controller/DocumentSimilarityDriver.java"** and it executed successfully without any errors.
+**Solution:** Earlier, I executed the code with my Driver class located in the path **"/workspaces/CloudComputing_Assignment2/src/main/com/example/controller/DocumentSimilarityDriver.java"**, but Maven expects JAVA source files to be under **"src/main/java"**. Hence, I corrected my path to **"/workspaces/CloudComputing_Assignment2/src/main/java/com/example/controller/DocumentSimilarityDriver.java"** and it executed successfully without any errors.
 
 ---
 ## Sample Input
