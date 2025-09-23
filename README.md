@@ -176,3 +176,12 @@ However, for this project specifically, **a very minimal time difference was obs
 The first project run was executed with 3 data nodes and then with single data node, hence the **docker-compose.yml** consists of latest data i.e., **single data node configuration.**
 
 ---
+
+## A simple visualization comparing the performance of single and 3 data nodes:
+
+**Please note:** The parameters used for the x-axis is precise as per my input dataset, however for y-axis it's hypothetical. This visualization is just for observing the performance with respect to a single data node and 3 data nodes.
+
+
+![Performance Comparison](https://raw.githubusercontent.com/sbal2911/assignments-assets/main/perf_comp.png)
+
+---
